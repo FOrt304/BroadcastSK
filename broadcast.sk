@@ -1,0 +1,18 @@
+ # This a Skript for Oger-Labs that is for the broadcasts such like, to know the IP of the Minecraft Server, Discord, Vote
+ # Please give Credit to me in Game if you are using this!
+ # Scripted by FOrt#6966 - FOrt404
+
+command /announce [<Text>]: # /bcast Command conflicts of the Plugin Essentials, sorry!
+      trigger:
+            arg 1 is "enable": # Enable Broadcasts!
+                  send "&aBroadcasts has been disabled!"
+                  loop 99999 times:
+                  wait 5 minutes # Customize the Time between.
+                  broadcast "§x§0§0§d§d§f§b§lO§x§0§d§d§0§f§b§lG§x§1§a§c§4§f§b§lE§x§2§8§b§7§f§c§lR§x§3§5§a§a§f§c§l-§x§4§2§9§e§f§c§lL§x§4§f§9§1§f§c§lA§x§5§d§8§4§f§d§lB§x§6§a§7§8§f§d§lS §x§7§7§6§b§f§d§l» &9Don't know our Minecraft Server IP? &7FORTYUKON.minehut.gg" # Customize the Broadcast Messages.
+                  wait 5 minutes
+                  broadcast "§x§0§0§d§d§f§b§lO§x§0§d§d§0§f§b§lG§x§1§a§c§4§f§b§lE§x§2§8§b§7§f§c§lR§x§3§5§a§a§f§c§l-§x§4§2§9§e§f§c§lL§x§4§f§9§1§f§c§lA§x§5§d§8§4§f§d§lB§x§6§a§7§8§f§d§lS §x§7§7§6§b§f§d§l» &9Do you want to be in our Discord Server? &7/Discord"
+                  wait 5 minutes
+                  broadcast "§x§0§0§d§d§f§b§lO§x§0§d§d§0§f§b§lG§x§1§a§c§4§f§b§lE§x§2§8§b§7§f§c§lR§x§3§5§a§a§f§c§l-§x§4§2§9§e§f§c§lL§x§4§f§9§1§f§c§lA§x§5§d§8§4§f§d§lB§x§6§a§7§8§f§d§lS §x§7§7§6§b§f§d§l» &9We highly appreciate if you Vote for our Minecraft Server! &7/Vote"
+        arg 1 is "disable": # Disable Broadcasts!
+            send "&cBroadcasts has been disabled!"
+            cancel event
